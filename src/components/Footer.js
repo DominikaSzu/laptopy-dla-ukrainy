@@ -1,25 +1,49 @@
 import React from "react";
 import { Link } from "gatsby";
 import { slugify } from "../common/helpers";
+import tw from "tailwind.macro";
+import styled from "@emotion/styled";
 
 export const Footer = () => {
-    return <div className={'bg-gray-100'}>
-        <div className="max-w-6xl mx-auto px-4">
-    <div className="flex justify-between flex-col md:flex-row">
-      
-      <div className={'flex space-x-4 justify-center md:justify-start'}>
-          <Link to="#" className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
-            <span className="font-bold">#LaptopyDlaUkrainy</span>
+    return <StyledFooterContainer>
+        <div>
+    <StyledFooterContent>
+      <StyledLogoWrapper className="space-x-4">
+          <Link to="#">
+            <span className="font-bold">#LaptopydlaUkrainy</span>
           </Link>
-        </div>
+        </StyledLogoWrapper>
 
-        <div className="flex items-center space-x-1 flex-col md:flex-row">
-          <Link to={`/#${slugify('FAQ')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">FAQ</Link>
-          <Link to={`/#${slugify('Partnerzy')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">Partnerzy</Link>
-          <Link to={`/#${slugify('Regulamin')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">Regulamin zbiórki</Link>
-          <Link to={`/#${slugify('Kontakt')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">kontakt</Link>
-        </div>
-    </div>
+        <StyledLinkList className='space-x-1'>
+          <Link to={`/#${slugify('FAQ')}`}>FAQ</Link>
+          <Link to={`/#${slugify('Partnerzy')}`}>Partnerzy</Link>
+          <Link to={`/#${slugify('Regulamin')}`}>Regulamin zbiórki</Link>
+          <Link to={`/#${slugify('Kontakt')}`}>kontakt</Link>
+        </StyledLinkList>
+    </StyledFooterContent>
   </div>
-  </div>
+  </StyledFooterContainer>
 }
+
+const StyledFooterContainer = styled.div`
+${tw`bg-gray-100`}
+> div {
+${tw`max-w-6xl mx-auto px-4`}
+}`;
+
+const StyledFooterContent = styled.div`
+${tw`flex justify-between flex-col md:flex-row`}`;
+
+const StyledLogoWrapper = styled.div`
+${tw`flex justify-center md:justify-start`}
+a {
+  ${tw`flex items-center py-5 px-2 text-gray-700 hover:text-gray-900`}
+}
+`;
+
+const StyledLinkList = styled.div`
+${tw`flex items-center  flex-col md:flex-row`}
+a {
+  ${tw`py-5 px-3 text-gray-700 hover:text-gray-900`}
+}
+`;

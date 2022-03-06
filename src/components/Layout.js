@@ -1,6 +1,5 @@
 import React from "react";
-import { Menu } from "./Menu";
-import { Footer } from "./Footer";
+import { Menu, Footer } from "./index";
 
 export const Layout = ({ children }) => {    
     return <div>

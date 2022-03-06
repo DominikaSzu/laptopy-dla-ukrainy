@@ -1,42 +1,42 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import tw from "tailwind.macro";
 import { Link } from "gatsby";
 import { slugify } from "../common/helpers";
+import tw from "tailwind.macro";
+import styled from "@emotion/styled";
 
 export const Menu = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(true);
 
 
-    return <StyledMenu>
-  <div className="max-w-6xl mx-auto px-4">
-    <div className="flex justify-between">
+    return <nav>
+  <StyledMenuWrapper>
+    <div>
       
-      <div className={'flex space-x-4'}>
-          <a href="#" className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+      <StyledLogo className="space-x-4">
+          <a href="#">
             <span className="font-bold">#LaptopyDlaUkrainy</span>
           </a>
-        </div>
+        </StyledLogo>
 
-        <div className="hidden md:flex items-center space-x-1">
-          <Link to={`/#${slugify('Jak mogę wziąć udział w inicjatywie?')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">chcę pomóc</Link>
-          <Link to={`/#${slugify('Potrzebuję pomocy')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">potrzebuję pomocy</Link>
-          <Link to={`/#${slugify('')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">o akcji</Link>
-          <Link to={`/#${slugify('Partnerzy')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">partnerzy</Link>
-          <Link to={`/#${slugify('Kontakt')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">kontakt</Link>
-        </div>
+        <StyledLinkList className="space-x-1">
+          <Link to={`/#${slugify('Jak mogę wziąć udział w inicjatywie?')}`}>chcę pomóc</Link>
+          <Link to={`/#${slugify('Potrzebuję pomocy')}`}>potrzebuję pomocy</Link>
+          <Link to={`/#${slugify('')}`}>o akcji</Link>
+          <Link to={`/#${slugify('Partnerzy')}`}>partnerzy</Link>
+          <Link to={`/#${slugify('Kontakt')}`}>kontakt</Link>
+        </StyledLinkList>
 
-      <div className="md:hidden flex items-center">
-        <button className="mobile-menu-button" onClick={() => setShowMobileMenu(!showMobileMenu)}>
-          <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <StyledMobileButton>
+        <button onClick={() => setShowMobileMenu(!showMobileMenu)}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-      </div>
+      </StyledMobileButton>
     </div>
-  </div>
+  </StyledMenuWrapper>
 
-  <div className={`mobile-menu ${showMobileMenu ? 'hidden' : ''} md:hidden`}>
+  <div className={`mobile-menu ${showMobileMenu ? 'hidden' : ''} md:hidden bg-white absolute w-full`}>
     <Link to={`/#${slugify('Jak mogę wziąć udział w inicjatywie?')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">chcę pomóc</Link>
     <Link to={`/#${slugify('Potrzebuję pomocy')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">potrzebuję pomocy</Link>
     <Link to={`/#${slugify('')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">o akcji:</Link>
@@ -45,8 +45,30 @@ export const Menu = () => {
     <Link to={`/#${slugify('Partnerzy')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">partnerzy</Link>
     <Link to={`/#${slugify('Kontakt')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">kontakt</Link>  
   </div>
-    </StyledMenu>;
+    </nav>;
 }
 
-const StyledMenu = styled.nav`
+const StyledMenuWrapper = styled.div`
+${tw`max-w-6xl mx-auto px-4`}
+>div {
+  ${tw`flex justify-between`}
+}`;
+
+const StyledLogo = styled.div`
+${tw`flex`}
+a {
+  ${tw`flex items-center py-5 px-2 text-gray-700 hover:text-gray-900`}
+}`;
+
+const StyledLinkList = styled.div`
+${tw`hidden md:flex items-center`}
+a {
+  ${tw`py-5 px-3 text-gray-700 hover:text-gray-900`}
+}`;
+
+const StyledMobileButton = styled.div`
+${tw`md:hidden flex items-center`}
+button svg {
+  ${tw`w-6 h-6`}
+}
 `;
