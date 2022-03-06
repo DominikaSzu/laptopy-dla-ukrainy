@@ -2,10 +2,10 @@ import React from "react";
 import { Menu } from "./Menu";
 import { Footer } from "./Footer";
 
-export const Layout = () => {
+export const Layout = ({ children }) => {    
     return <div>
         <Menu/>
-LEJAOUT
+        { children }
 <Footer/>
     </div>
 }

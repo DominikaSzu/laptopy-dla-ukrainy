@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
+import { Link } from "gatsby";
+import { slugify } from "../common/helpers";
 
 export const Menu = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(true);
@@ -17,11 +19,11 @@ export const Menu = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-1">
-          <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900">chcę pomóc</a>
-          <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900">potrzebuję pomocy</a>
-          <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900">o akcji</a>
-          <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900">partnerzy</a>
-          <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900">kontakt</a>
+          <Link to={`/#${slugify('Jak mogę wziąć udział w inicjatywie?')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">chcę pomóc</Link>
+          <Link to={`/#${slugify('Potrzebuję pomocy')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">potrzebuję pomocy</Link>
+          <Link to={`/#${slugify('')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">o akcji</Link>
+          <Link to={`/#${slugify('Partnerzy')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">partnerzy</Link>
+          <Link to={`/#${slugify('Kontakt')}`} className="py-5 px-3 text-gray-700 hover:text-gray-900">kontakt</Link>
         </div>
 
       <div className="md:hidden flex items-center">
@@ -35,13 +37,13 @@ export const Menu = () => {
   </div>
 
   <div className={`mobile-menu ${showMobileMenu ? 'hidden' : ''} md:hidden`}>
-    <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">chcę pomóc</a>
-    <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">potrzebuję pomocy</a>
-    <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">o akcji</a>
-    <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">FAQ</a>
-    <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">regulamin zbiórki</a>
-    <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">partnerzy</a>
-    <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">kontakt</a>  
+    <Link to={`/#${slugify('Jak mogę wziąć udział w inicjatywie?')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">chcę pomóc</Link>
+    <Link to={`/#${slugify('Potrzebuję pomocy')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">potrzebuję pomocy</Link>
+    <Link to={`/#${slugify('')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">o akcji:</Link>
+    <Link to={`/#${slugify('FAQ')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">FAQ</Link>
+    <Link to={`/#${slugify('Regulamin')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">regulamin zbiórki</Link>
+    <Link to={`/#${slugify('Partnerzy')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">partnerzy</Link>
+    <Link to={`/#${slugify('Kontakt')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">kontakt</Link>  
   </div>
     </StyledMenu>;
 }
