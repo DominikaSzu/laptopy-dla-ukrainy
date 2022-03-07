@@ -18,7 +18,7 @@ const IndexPage = () => {
   <TextComponent title={'Partnerzy'} 
   content={'PARTNERZY'}/>
   <TextComponent title={'Regulamin'} 
-  content={'https://drive.google.com/file/d/1zxCiJ2fgSp23Hmo__VG1YTYc7Wwykk_h/view?usp=sharing'}/>
+  content={<p>Zapoznaj się z regulaminem zbiórki: <a target="_blank" href="https://drive.google.com/file/d/1zxCiJ2fgSp23Hmo__VG1YTYc7Wwykk_h/view?usp=sharing">Regulamin</a></p>}/>
   <TextComponent title={'Kontakt'} 
   content={content5}/>
 </Layout>
@@ -52,9 +52,11 @@ Jeśli jesteś osobą prywatną, uciekasz z Ukrainy albo pomagasz ukraińskiej r
 
 // https://docs.google.com/forms/d/e/1FAIpQLSeOA4kZIefNO0dxEGhuQN0ZlhWxiCXjHztVIqz1XbFP0mz3Vw/viewform
 
-const content5 =`
-Komitet Społeczny “Laptopy dla Ukrainy”
-Ostatnia 1c/b12
-31-444 Kraków
-Mail: laptopydlaukrainy.pl
-`;
+const content5 = <div>
+<address>
+Komitet Społeczny “Laptopy dla Ukrainy”<br/>
+Ostatnia 1c/b12<br/>
+31-444 Kraków<br/>
+@ <a href="mailto:laptopydlaukrainy@gmail.com">laptopydlaukrainy@gmail.com</a><br/>
+</address>
+</div>;
