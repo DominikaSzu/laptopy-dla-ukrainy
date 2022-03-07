@@ -15,14 +15,18 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@chakra-ui/accordion": "^1.4.9",
+    "@chakra-ui/react": "^1.8.6",
     "@emotion/core": "^11.0.0",
     "@emotion/styled": "^11.8.1",
     "autoprefixer": "^10.4.2",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^2.0.6",
     "gatsby": "^4.9.0",
     "gatsby-plugin-emotion": "^7.9.0",
     "gatsby-plugin-image": "^2.9.0",
     "gatsby-plugin-postcss": "^5.9.0",
+    "gatsby-plugin-provide-react": "^1.0.2",
     "gatsby-plugin-sharp": "^4.9.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-styled-components": "^5.9.0",

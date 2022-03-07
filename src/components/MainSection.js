@@ -6,8 +6,8 @@ import styled from "@emotion/styled";
 
 export const MainSection = () => {
     return <WrappedMainSection className="my-44">
-        <h1>Dołącz do akcji  #LaptopydlaUkrainy</h1>
-        <p>Oddając nam sprzęt pomożesz uchodzcom z Ukrainy</p>
+        <h1>Weź udział w akcji #LaptopydlaUkrainy</h1>
+        <p>Oddając nam sprzęt pomożesz uchodźczyniom i uchodźcom z Ukrainy</p>
         <Link to={`/#${slugify('Jak mogę wziąć udział w inicjatywie?')}`}>Przekaż laptop</Link>
     </WrappedMainSection>
 }

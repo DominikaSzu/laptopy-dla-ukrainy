@@ -1,0 +1,11 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2015
+    },
+    "rules": {
+      "no-undef": "off"
+         
+    }
+  }

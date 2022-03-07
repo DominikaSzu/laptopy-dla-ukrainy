@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-      title: ``,
-    siteUrl: `https://www.yourdomain.tld`
+      title: "Laptopy dla Ukrainy",
+    siteUrl: "https://www.yourdomain.tld"
   },
   plugins: [
     "gatsby-plugin-image", 
     "gatsby-plugin-postcss",
     "gatsby-plugin-sharp", 
+    `gatsby-plugin-provide-react`,
     `gatsby-plugin-emotion`,
     "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
