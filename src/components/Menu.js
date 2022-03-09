@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { slugify } from "../common/helpers";
 import tw from "tailwind.macro";
 import styled from "@emotion/styled";
+import { howToParticipate, howToGetHelped, partners, actionExplained } from "../common/data";
 
 export const Menu = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(true);
@@ -20,19 +21,19 @@ export const Menu = () => {
 
         <StyledLinkList className="space-x-1">
           <StyledLink>
-            <Link to={`/#${slugify('Jak mogę wziąć udział w inicjatywie?')}`}>chcę pomóc</Link>
+            <Link to={`/#${slugify(howToParticipate.title)}`}>chcę pomóc</Link>
           </StyledLink>
           <StyledLink>
-            <Link to={`/#${slugify('Potrzebuję pomocy')}`}>potrzebuję pomocy</Link>
+            <Link to={`/#${slugify(howToGetHelped.title)}`}>potrzebuję pomocy</Link>
             </StyledLink>
           <StyledLink>
-            <Link to={`/#${slugify('')}`}>o akcji</Link>
+            <Link to={`/#${slugify(actionExplained.title)}`}>o zbiórce</Link>
             </StyledLink>
-          <StyledLink>
-          <Link to={`/#${slugify('Partnerzy')}`}>partnerzy</Link>
+            <StyledLink>
+          <Link to={`/#${slugify('FAQ')}`}>FAQ</Link>
           </StyledLink>
           <StyledLink>
-          <Link to={`/#${slugify('Kontakt')}`}>kontakt</Link>
+          <Link to={`/#${slugify(partners.title)}`}>partnerzy</Link>
           </StyledLink>
         </StyledLinkList>
 
@@ -46,14 +47,17 @@ export const Menu = () => {
     </div>
   </StyledMenuWrapper>
 
-  <div className={`mobile-menu ${showMobileMenu ? 'hidden' : ''} md:hidden bg-white absolute w-full`}>
-    <Link to={`/#${slugify('Jak mogę wziąć udział w inicjatywie?')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">chcę pomóc</Link>
-    <Link to={`/#${slugify('Potrzebuję pomocy')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">potrzebuję pomocy</Link>
-    <Link to={`/#${slugify('')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">o akcji:</Link>
-    <Link to={`/#${slugify('FAQ')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">FAQ</Link>
-    <Link to={`/#${slugify('Regulamin')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">regulamin zbiórki</Link>
-    <Link to={`/#${slugify('Partnerzy')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">partnerzy</Link>
-    <Link to={`/#${slugify('Kontakt')}`} className="block py-2 px-4 text-sm hover:bg-gray-200">kontakt</Link>  
+  <div className={`mobile-menu ${showMobileMenu ? 'hidden' : ''} md:hidden bg-white absolute w-full z-50`} style={{paddingBottom: "1rem"}}>
+    <Link to={`/#${slugify(howToParticipate.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
+    className="block py-2 px-4 text-sm hover:bg-gray-200">chcę pomóc</Link>
+    <Link to={`/#${slugify(howToGetHelped.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
+    className="block py-2 px-4 text-sm hover:bg-gray-200">potrzebuję pomocy</Link>
+    <Link to={`/#${slugify(actionExplained.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
+    className="block py-2 px-4 text-sm hover:bg-gray-200">o zbiórce</Link>
+    <Link to={`/#${slugify('FAQ')}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
+    className="block py-2 px-4 text-sm hover:bg-gray-200">FAQ</Link>
+    <Link to={`/#${slugify(partners.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
+    className="block py-2 px-4 text-sm hover:bg-gray-200">partnerzy</Link> 
   </div>
     </nav>;
 }
@@ -62,7 +66,8 @@ const StyledMenuWrapper = styled.div`
 ${tw`max-w-6xl mx-auto px-4`}
 >div {
   ${tw`flex justify-between`}
-}`;
+}
+`;
 
 const StyledLogo = styled.div`
 ${tw`flex`}

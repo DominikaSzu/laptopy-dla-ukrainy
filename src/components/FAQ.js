@@ -9,9 +9,10 @@ import {
   import { FAQquestions } from "../common/data";
   import tw from "tailwind.macro";
 import styled from "@emotion/styled";
+import { slugify } from "../common/helpers";
 
 export const FAQ = () => {
-    return <WrappedComponent>
+    return <WrappedComponent id={slugify('FAQ')}>
         <h2>FAQ</h2>
         <WrappedAccordeon>
     <Accordion allowToggle>
@@ -41,7 +42,7 @@ export const FAQ = () => {
 const WrappedComponent = styled.div`
 ${tw`max-w-6xl mx-auto  my-14`}
 h2 {
-    ${tw`font-bold text-xl text-center my-6`}
+    ${tw`font-bold text-2xl text-center my-6`}
 }
 `;
 
@@ -62,7 +63,7 @@ border-bottom: .5px solid rgb(226, 232, 240);
 `;
 
 const WrappedQuestion = styled.h3`
-${tw`p-2`}
+${tw`p-4`}
 &:hover {
    background-color: #F5F5F5;
 }

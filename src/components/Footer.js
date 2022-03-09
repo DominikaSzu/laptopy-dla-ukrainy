@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { slugify } from "../common/helpers";
 import tw from "tailwind.macro";
 import styled from "@emotion/styled";
+import { howToParticipate, howToGetHelped, partners, actionExplained } from "../common/data";
 
 export const Footer = () => {
     return <StyledFooterContainer>
@@ -16,9 +17,8 @@ export const Footer = () => {
 
         <StyledLinkList className='space-x-1'>
           <Link to={`/#${slugify('FAQ')}`}>FAQ</Link>
-          <Link to={`/#${slugify('Partnerzy')}`}>Partnerzy</Link>
-          <Link to={`/#${slugify('Regulamin')}`}>Regulamin zbiórki</Link>
-          <Link to={`/#${slugify('Kontakt')}`}>kontakt</Link>
+          <Link to={`/#${slugify(actionExplained.title)}`}>o zbiórce</Link>
+          <Link to={`/#${slugify(partners.title)}`}>Partnerzy</Link>
         </StyledLinkList>
     </StyledFooterContent>
   </div>

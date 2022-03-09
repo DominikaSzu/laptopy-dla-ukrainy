@@ -1,19 +1,24 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { slugify } from "../common/helpers";
 import tw from "tailwind.macro";
 import styled from "@emotion/styled";
+import { howToParticipate } from "../common/data";
 
 export const MainSection = () => {
-    return <WrappedMainSection className="my-44">
-        <h1>Weź udział w akcji #LaptopydlaUkrainy</h1>
+    return <WrappedMainSection>
+        <h1>Weź udział w zbiórce #LaptopydlaUkrainy</h1>
         <p>Oddając nam sprzęt pomożesz uchodźczyniom i uchodźcom z Ukrainy</p>
-        <Link to={`/#${slugify('Jak mogę wziąć udział w inicjatywie?')}`}>Przekaż laptop</Link>
+        <Link to={`/#${slugify(howToParticipate.title)}`}>Przekaż laptop</Link>
+        <img src="../../cover.jpg" alt=""/>
     </WrappedMainSection>
 }
 
+
 const WrappedMainSection = styled.div`
-${tw`max-w-6xl mx-auto px-4 text-center`}
+${tw`max-w-6xl mx-auto px-4 text-center relative`}
+margin-top: 8rem;
+margin-bottom: 11rem;
 h1 {
     ${tw`text-4xl md:text-6xl`}
 }
@@ -39,5 +44,12 @@ color: #fff;
 &:focus {
   box-shadow: inset 0 -3.25em 0 0 #ffd500;
 }
+}
+img {
+  position: absolute;
+  top: 80px;
+  z-index: -1;
+  width: 90%;
+  right: 0;
 }
 `;
