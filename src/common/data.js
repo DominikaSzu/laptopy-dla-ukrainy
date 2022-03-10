@@ -1,4 +1,4 @@
-import { GatsbyImage } from "gatsby-plugin-image"
+import { Button } from "../components";
 
 export const FAQquestions = [
     { question: 'Kto może oddać swój sprzęt?', 
@@ -86,9 +86,11 @@ export const howToParticipate = {
     content: <div>
         <p>Twoja firma ma nieużywane i sprawne laptopy i chce je przekazać uchodźczyniom i uchodźcom z Ukrainy?</p>
         <p>Wypełnij poniższy formularz, a my skontaktujemy się z Tobą, by uzgodnić dalsze kroki </p> 
-        <a className="form-button" taget="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeTg069WphQgRFh8ztSshnlZrZ4vp0-d_hSmZ6f5AnwI871mQ/viewform">
-            Przejdź do formularza >
-        </a>
+        <div className="form-button--wrapper">
+        <a className={ "form-button" } 
+        href={ 'https://docs.google.com/forms/d/e/1FAIpQLSeOA4kZIefNO0dxEGhuQN0ZlhWxiCXjHztVIqz1XbFP0mz3Vw/viewform' } 
+        target="_blank">Przejdź do formularza ></a>
+        </div>
     </div>
 }
 
@@ -96,9 +98,11 @@ export const howToGetHelped = {
     title: "Potrzebujesz laptopa?",
     content: <div>
         <p>Jeśli jesteś organizacją pozarządową, która pomaga uchodźczyniom i uchodźcom z terenu Ukrainy i możesz im przekazać sprzęt komputerowy, wypełnij poniższy formularz:</p>
-        <a className="form-button" taget="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeTg069WphQgRFh8ztSshnlZrZ4vp0-d_hSmZ6f5AnwI871mQ/viewform">
-            Przejdź do formularza >
-        </a>
+        <div className="form-button--wrapper">
+        <a className={ "form-button" } 
+        href={ 'https://docs.google.com/forms/d/e/1FAIpQLSeTg069WphQgRFh8ztSshnlZrZ4vp0-d_hSmZ6f5AnwI871mQ/viewform' } 
+        target="_blank">Przejdź do formularza ></a>
+        </div>
     </div>
 }
 
@@ -128,6 +132,7 @@ export const contact = {
     content: <div className={"contact-card"}>
         <p>Koordynatorka akcji:</p>
         <p>Paulina Poniewska</p>
+        <a style={{display: "block"}} href="+48799038361">tel. 799 038 361</a>
         @ <a href="mailto:laptopydlaukrainy@gmail.com" target="_blank">laptopydlaukrainy@gmail.com</a><br/>
     </div>
 }

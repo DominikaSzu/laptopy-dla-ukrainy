@@ -4,3 +4,4 @@ export * from "./MainSection";
 export * from "./Menu";
 export * from "./TextComponent";
 export * from "./FAQ";
+export * from "./Button";

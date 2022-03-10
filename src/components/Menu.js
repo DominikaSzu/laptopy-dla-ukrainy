@@ -9,7 +9,7 @@ export const Menu = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(true);
 
 
-    return <nav>
+    return <StyledNav>
   <StyledMenuWrapper>
     <div>
       
@@ -59,8 +59,16 @@ export const Menu = () => {
     <Link to={`/#${slugify(partners.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
     className="block py-2 px-4 text-sm hover:bg-gray-200">partnerzy</Link> 
   </div>
-    </nav>;
+    </StyledNav>;
 }
+
+const StyledNav = styled.nav`
+background-color: #fff; 
+position: -webkit-sticky;
+position: sticky; 
+top: 0;
+z-index: 999;
+`;
 
 const StyledMenuWrapper = styled.div`
 ${tw`max-w-6xl mx-auto px-4`}
