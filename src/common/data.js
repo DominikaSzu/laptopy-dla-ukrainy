@@ -32,7 +32,7 @@ export const FAQquestions = [
     </ol>
     </div> },
     { question: 'Jak długo trwa zbiórka?', answer: 
-<p>Zbiórka „Laptopy dla Ukrainy” trwać będzie od 10 marca do 31 marca 2022 r.</p> },
+<p>Zbiórka „Laptopy dla Ukrainy” trwać będzie od 10 marca do 31 maja 2022 r.</p> },
     { question: 'Do kogo trafią laptopy?', answer: 
     <p>Zgromadzony sprzęt komputerowy zostanie przekazany uchodźczyniom i uchodźcom z terenu Ukrainy za pośrednictwem organizacji pozarządowych.</p> },
     { question: `Gdzie mogę przynieść sprzęt?`, answer: 
