@@ -24,7 +24,7 @@ export const Menu = () => {
             <Link to={`/#${slugify(howToParticipate.title)}`}>chcę pomóc</Link>
           </StyledLink>
           <StyledLink>
-            <Link to={`/#${slugify(howToGetHelped.title)}`}>potrzebuję pomocy</Link>
+            <Link to={`/#${slugify(howToGetHelped.title)}`}>Мені потрібен ноутбук</Link>
             </StyledLink>
           <StyledLink>
             <Link to={`/#${slugify(actionExplained.title)}`}>o zbiórce</Link>
@@ -51,7 +51,7 @@ export const Menu = () => {
     <Link to={`/#${slugify(howToParticipate.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
     className="block py-2 px-4 text-sm hover:bg-gray-200">chcę pomóc</Link>
     <Link to={`/#${slugify(howToGetHelped.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
-    className="block py-2 px-4 text-sm hover:bg-gray-200">potrzebuję pomocy</Link>
+    className="block py-2 px-4 text-sm hover:bg-gray-200">Мені потрібен ноутбук</Link>
     <Link to={`/#${slugify(actionExplained.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
     className="block py-2 px-4 text-sm hover:bg-gray-200">o zbiórce</Link>
     <Link to={`/#${slugify('FAQ')}`} onClick={() => setShowMobileMenu(!showMobileMenu)}

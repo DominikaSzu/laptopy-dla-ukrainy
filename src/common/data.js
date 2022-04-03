@@ -57,6 +57,10 @@ export const aboutAction = {
         <p>W dzisiejszych czasach ciężko sobie poradzić bez komputera. Dlatego chcemy zebrać dla nich laptopy potrzebne w codziennym życiu. Dzięki temu będą mogli pozostawać w kontakcie z bliskimi, śledzić na bieżąco informacje, szukać zatrudnienia, pracować zdalnie, składać wnioski online do urzędów. </p>
         <p>Nie zapominajmy też o najmłodszych. Niech oglądają na laptopach ulubione bajki, grają w swoje gry i uczą się - w końcu wciąż mamy rok szkolny. </p>
         <p>Dlatego zwracamy się do krakowskich firm: być może w Waszych szafach i magazynach leżą laptopy, myszki, ładowarki, słuchawki, których już nie używacie, a mogłyby się jeszcze przydać? Pomóżcie naszym ukraińskim sąsiadom i weźcie udział w akcji “Laptopy dla Ukrainy”.</p>
+        <div>
+            <p>Dołącz do naszego <a className="fb-group" href="https://fb.me/e/36HdSYCRC" target="_blank">wydarzenia na Facebooku #LaptopyDlaUkrainy</a></p>
+            <p>Приєднуйтесь до нашої <a className="fb-group" href="https://fb.me/e/36HdSYCRC" target="_blank">події у Facebook #LaptopyDlaUkrainy</a></p>
+        </div>
     </div>
 }
 
@@ -97,6 +101,13 @@ export const howToParticipate = {
 export const howToGetHelped = {
     title: "Potrzebujesz laptopa?",
     content: <div>
+        <p>Якщо ви є біженцем з України та перетнули український кордон після 24 лютого 2022 року і у вас є номер PESEL, заповніть форму нижче:</p>
+        <div style={{marginBottom: '2rem'}} className="form-button--wrapper">
+        <a className={ "form-button" } 
+        href={ 'https://docs.google.com/forms/d/e/1FAIpQLSdSdjcSCEJYDPFb6VMBGZHFrFGRpuR1ly3dCSkAnjT2FK-cVA/viewform' } 
+        target="_blank">Перейдіть до форми ></a>
+        </div>
+
         <p>Jeśli jesteś organizacją pozarządową, która pomaga uchodźczyniom i uchodźcom z terenu Ukrainy i możesz im przekazać sprzęt komputerowy, wypełnij poniższy formularz:</p>
         <div className="form-button--wrapper">
         <a className={ "form-button" } 
@@ -122,6 +133,9 @@ export const partners = {
             </a>
             <a className={"ppg"} target="_blank" href="https://pushpushgo.com/pl/">
             <img alt={"Logo PushPushGo"} src={"../../ppg-logo.png"}/>
+            </a>
+            <a className={"uainkrk"} target="_blank" href="https://uainkrakow.pl/">
+            <img alt={"Logo UAinKrakow.pl"} src={"../../ukinkrakow-logo.png"}/>
             </a>
         </div>
     </div>

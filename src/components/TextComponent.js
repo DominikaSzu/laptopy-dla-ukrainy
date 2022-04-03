@@ -41,6 +41,19 @@ color: #fff;
 }
 }
 
+.fb-group {
+    position: relative;
+    color: #005bbb;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+    height: 2px;
+    background: #005bbb;
+    bottom: -3px;
+    }
+}
+
 p {
     margin-bottom: 1.5rem;
 }
@@ -56,6 +69,7 @@ ol li {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 3rem 0;
+    row-gap: 1.5rem;
 
     a {
         height: 60px;
