@@ -7,6 +7,7 @@ import {
   howToParticipate, 
   howToGetHelped,
   partners,
+  partecipants,
   contact } from "../common/data"; 
 
 const IndexPage = () => {
@@ -25,6 +26,8 @@ const IndexPage = () => {
   <FAQ/>
   <TextComponent title={ partners.title } 
   content={ partners.content }/>
+  <TextComponent title={ partecipants.title } 
+  content={ partecipants.content }/>
   <TextComponent title={ contact.title } 
   content={ contact.content }/>
 </Layout>

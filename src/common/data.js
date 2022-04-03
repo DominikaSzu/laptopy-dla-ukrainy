@@ -137,6 +137,23 @@ export const partners = {
             <a className={"uainkrk"} target="_blank" href="https://uainkrakow.pl/">
             <img alt={"Logo UAinKrakow.pl"} src={"../../ukinkrakow-logo.png"}/>
             </a>
+            <a className={"otwartykrk"} target="_blank" href="https://otwarty.krakow.pl">
+            <img alt={"Logo Koalicja Otwarty Kraków"} src={"../../kok.png"}/>
+            </a>
+        </div>
+    </div>
+}
+
+export const partecipants = {
+    title: 'Akcję wsparli',
+    content: <div>
+        <div className={"logo-wrapper action-supporters"}>
+            <a className="bplusb" target="_blank" href="https://bplusb.pl/">
+            <img alt={"Logo B plus B"} src={"../../bplusb.png"} />
+            </a>
+            <a className="poweredbymeaning" target="_blank" href="www.poweredbymeaning.com">
+            <img alt={"Logo Powered by Meaning"} src={"../../pbm.png"}/>
+            </a>
         </div>
     </div>
 }

@@ -82,6 +82,19 @@ ol li {
         &.ppg {
             height: 50px;
         }
+
+        &.otwartykrk {
+            height: 90px;
+        }
+
+        &.poweredbymeaning, 
+        &.bplusb {
+            height: 80px;
+        }
+    }
+
+    &.action-supporters {
+        justify-content: space-evenly;
     }
 
     @media (max-width: 767px) {
