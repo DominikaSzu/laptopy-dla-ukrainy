@@ -151,8 +151,17 @@ export const partecipants = {
             <a className="bplusb" target="_blank" href="https://bplusb.pl/">
             <img alt={"Logo B plus B"} src={"../../bplusb.png"} />
             </a>
-            <a className="poweredbymeaning" target="_blank" href="www.poweredbymeaning.com">
+            <a className="poweredbymeaning" target="_blank" href="https://www.poweredbymeaning.com/">
             <img alt={"Logo Powered by Meaning"} src={"../../pbm.png"}/>
+            </a>
+            <a className={"ppg"} target="_blank" href="https://pushpushgo.com/pl/">
+            <img alt={"Logo PushPushGo"} src={"../../ppg-logo.png"}/>
+            </a>
+            <a className={"mo"} target="_blank" href="https://www.mythicowl.com/pl/">
+            <img alt={"Logo MythicOwl"} src={"../../mythicowl.webp"}/>
+            </a>
+            <a className={"hitachi"} target="_blank" href="https://www.hitachienergy.com/about-us/country-and-regional-information/poland">
+            <img alt={"Logo Hitachi"} src={"../../hitachi.png"}/>
             </a>
         </div>
     </div>
