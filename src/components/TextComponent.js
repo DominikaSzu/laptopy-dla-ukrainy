@@ -74,6 +74,7 @@ ol li {
     a {
         height: 60px;
         display: inline-block;
+        transition: transform .4s;
 
         img {
             height: 100%;
@@ -90,6 +91,10 @@ ol li {
         &.poweredbymeaning, 
         &.bplusb {
             height: 80px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
