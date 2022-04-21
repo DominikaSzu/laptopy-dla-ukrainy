@@ -161,6 +161,9 @@ export const partecipants = {
             <a className={"hitachi"} target="_blank" href="https://www.hitachienergy.com/about-us/country-and-regional-information/poland">
             <img alt={"Logo Hitachi"} src={"../../hitachi.png"}/>
             </a>
+            <a className={"shell"} target="_blank" href="https://www.shell.pl/">
+            <img alt={"Logo Shell"} src={"../../shell.png"}/>
+            </a>
         </div>
     </div>
 }
