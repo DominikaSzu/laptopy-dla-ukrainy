@@ -35,11 +35,6 @@ export const FAQquestions = [
 <p>Zbiórka „Laptopy dla Ukrainy” trwać będzie od 10 marca do 31 maja 2022 r.</p> },
     { question: 'Do kogo trafią laptopy?', answer: 
     <p>Zgromadzony sprzęt komputerowy zostanie przekazany uchodźczyniom i uchodźcom z terenu Ukrainy za pośrednictwem organizacji pozarządowych.</p> },
-    { question: `Gdzie mogę przynieść sprzęt?`, answer: 
-    <div>
-    <p>Po otrzymaniu od firmy formularza zgłoszeniowego, skontaktujemy się ze wskazaną w nim osobą do kontaktu w celu dopełnienia formalności (umowa darowizny) i ustalenia terminu, kiedy sprzęt komputerowy można dostarczyć na miejsce zbiórki i przekazać podpisany dokument.</p>
-    <p>Miejscem zbiórki sprzętu jest siedziba firmy PushPushGo sp.z o.o. mieszcząca się przy ul. Ostatniej 1c/B12.</p>    
-    </div>},
     { question: `Czy sprzęt mogę wysłać pocztą/kurierem?`, answer: 
     <p>Tak, ale tylko wtedy, kiedy ustalisz taką formę przekazania sprzętu z Koordynatorem, czyli nami.</p> },
     { question: `Nie potrafię przygotować sprzętu według wytycznych organizatorów akcji. Czy mimo wszystko mogę oddać go na zbiórkę?`, 
@@ -54,7 +49,7 @@ export const aboutAction = {
     title: "O akcji",
     content: <div>
         <p>Uchodźczynie i uchodźcy - a także ich dzieci - potrzebują namiastki normalności w tej nowej, trudnej rzeczywistości.</p> 
-        <p>W dzisiejszych czasach ciężko sobie poradzić bez komputera. Dlatego chcemy zebrać dla nich laptopy potrzebne w codziennym życiu. Dzięki temu będą mogli pozostawać w kontakcie z bliskimi, śledzić na bieżąco informacje, szukać zatrudnienia, pracować zdalnie, składać wnioski online do urzędów. </p>
+        <p>W dzisiejszych czasach ciężko sobie poradzić bez komputera. Dlatego chcemy zebrać dla nich laptopy potrzebne w codziennym życiu. Dzięki temu będą mogli pozostawać w kontakcie z bliskimi, śledzić na bieżąco informacje, szukać zatrudnienia, składać wnioski online do urzędów. </p>
         <p>Nie zapominajmy też o najmłodszych. Niech oglądają na laptopach ulubione bajki, grają w swoje gry i uczą się - w końcu wciąż mamy rok szkolny. </p>
         <p>Dlatego zwracamy się do krakowskich firm: być może w Waszych szafach i magazynach leżą laptopy, myszki, ładowarki, słuchawki, których już nie używacie, a mogłyby się jeszcze przydać? Pomóżcie naszym ukraińskim sąsiadom i weźcie udział w akcji “Laptopy dla Ukrainy”.</p>
         <div>
@@ -78,10 +73,9 @@ export const actionExplained = {
         <li>Współpracujemy z kilkoma krakowskimi organizacjami pozarządowymi, które pomogą nam w przekazaniu sprzętu bezpośrednio osobom potrzebującym oraz w kwestiach księgowo-prawnych. Firma, która przekaże sprzęt komputerowy, podpisze z jedną z nich umowę darowizny. To są nasi Partnerzy wspierający.</li>
         <li>Aby wziąć udział w akcji, Twoja firma musi wypełnić formularz zgłoszeniowy online znajdujący się na naszej stronie, w którym podaje swoje dane oraz informacje o przekazywanych laptopach (numer seryjny, system operacyjny, język, itp.).</li>
         <li>Jak tylko otrzymamy zgłoszenie, skontaktujemy się z osobą wskazaną do kontaktu z ramienia Twojej firmy. Przekażemy jej wzór umowy darowizny oraz ustalimy termin, kiedy można dostarczyć sprzęt na miejsce zbiórki.</li>
-        <li>Miejscem zbiórki sprzętu jest biuro naszej firmy PushPushGo sp. z o.o. znajdujące się przy ul. Ostatniej 1C/B12 w Krakowie. </li>
-        <li>Na naszej stronie znajduje się także formularz do zgłoszenia zapotrzebowania na laptopy dla organizacji pozarządowych, które opiekują się uchodźczyniami i uchodźcami, znają ich potrzeby i chcą przekazać laptopy swoimi podopiecznymi.</li>
-        <li>W momencie zgromadzenia wystarczającej liczby laptopów, to przekazujemy je tym organizacjom za pośrednictwem naszych Partnerów wspierających, którzy podpiszą z nimi umowę darowizny.</li>
-        <li>Każda firma, biorąca udział w akcji, otrzyma informację, gdzie trafił ich sprzęt komputerowy.</li>
+        <li>Na naszej stronie znajduje się także formularz do zgłoszenia zapotrzebowania na laptopa dla uchodźców i uchodźczyń oraz dla organizacji pozarządowych.</li>
+        <li>W momencie zgromadzenia wystarczającej liczby laptopów, przekazujemy je osobom potrzebującym na podstawie umowy darowizny.</li>
+        <li> Każda firma, biorąca udział w akcji, otrzyma informację, gdzie trafił ich sprzęt komputerowy.</li>
     </ol>
 }
 
@@ -99,16 +93,17 @@ export const howToParticipate = {
 }
 
 export const howToGetHelped = {
-    title: "Potrzebujesz laptopa?",
+    title: "Мені потрібен ноутбук 💻",
+    addUnderline: true,
     content: <div>
-        <p>Якщо ви є біженцем з України та перетнули український кордон після 24 лютого 2022 року і у вас є номер PESEL, заповніть форму нижче:</p>
+        <p>Якщо ви є біженцем з України та перетнули український кордон після 24 лютого 2022 року , заповніть форму нижче. Заповнивши цю форму, ви потрапите в список очікування, щоб отримати ноутбук. Ми зв’яжемося з вами електронною поштою, як тільки у нас буде готовий ноутбук до відбору. Ноутбуки забираються в Кракові та повинні бути забрані особисто.</p>
         <div style={{marginBottom: '2rem'}} className="form-button--wrapper">
         <a className={ "form-button" } 
         href={ 'https://docs.google.com/forms/d/e/1FAIpQLSdSdjcSCEJYDPFb6VMBGZHFrFGRpuR1ly3dCSkAnjT2FK-cVA/viewform' } 
         target="_blank">Перейдіть до форми ></a>
         </div>
 
-        <p>Jeśli jesteś organizacją pozarządową, która pomaga uchodźczyniom i uchodźcom z terenu Ukrainy i możesz im przekazać sprzęt komputerowy, wypełnij poniższy formularz:</p>
+        <p>Jeśli jesteś organizacją pozarządową, która pomaga uchodźczyniom i uchodźcom z terenu Ukrainy i chcesz wskazać osoby potrzebujące, wypełnij poniższy formularz:</p>
         <div className="form-button--wrapper">
         <a className={ "form-button" } 
         href={ 'https://docs.google.com/forms/d/e/1FAIpQLSeTg069WphQgRFh8ztSshnlZrZ4vp0-d_hSmZ6f5AnwI871mQ/viewform' } 
@@ -175,7 +170,6 @@ export const contact = {
     content: <div className={"contact-card"}>
         <p>Koordynatorka akcji:</p>
         <p>Paulina Poniewska</p>
-        <a style={{display: "block"}} href="+48799038361">tel. 799 038 361</a>
         @ <a href="mailto:laptopydlaukrainy@gmail.com" target="_blank">laptopydlaukrainy@gmail.com</a><br/>
     </div>
 }

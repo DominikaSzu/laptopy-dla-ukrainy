@@ -1,12 +1,13 @@
 import React from "react";
-import {slugify} from "../common/helpers";
+import {slugify, signPlaceholder} from "../common/helpers";
 import tw from "tailwind.macro";
 import styled from "@emotion/styled";
 
-export const TextComponent = ({title, content}) => {
+export const TextComponent = ({title, content, addUnderline = false }) => {
     return <WrappedTextComponent 
-    id={slugify(title)}>
-        <h2>{title}</h2>
+    id={slugify(title)} 
+    underline={ addUnderline }>
+        <h2 data-text={ signPlaceholder }>{title}</h2>
         <div>{content}</div>
     </WrappedTextComponent>
 }
@@ -16,6 +17,15 @@ ${tw`max-w-6xl mx-auto px-4 my-14`}
 margin-bottom: 3rem;
 h2 {
     ${tw`font-bold text-2xl text-center my-8`}
+    /* text-decoration: ${ props => props.underline ? 'underline wavy #005bbb' : 'none' } */
+    position: relative;
+    &::before {
+        position: absolute;
+        top: .5rem;
+        content: attr(data-text);
+        color: transparent;
+        text-decoration: ${ props => props.underline ? 'underline wavy #005bbb' : 'none' }
+    }
 }
 .form-button--wrapper {
 ${tw`text-center`}

@@ -15,3 +15,5 @@ export const slugify = (str) => {
 
     return str;
 }
+
+export const signPlaceholder = 'xxxxxxxxxxxxxxxxxxxxxx';

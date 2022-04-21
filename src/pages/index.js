@@ -21,7 +21,8 @@ const IndexPage = () => {
   content={ actionExplained.content }/>
   <TextComponent title={ howToParticipate.title } 
   content={ howToParticipate.content }/>
-  <TextComponent title={ howToGetHelped.title } 
+  <TextComponent title={ howToGetHelped.title }
+  addUnderline={ howToGetHelped.addUnderline } 
   content={ howToGetHelped.content }/>
   <FAQ/>
   <TextComponent title={ partners.title } 
