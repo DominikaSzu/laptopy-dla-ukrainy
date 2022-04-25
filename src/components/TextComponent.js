@@ -81,7 +81,7 @@ ol li {
     padding: 3rem 0;
     row-gap: 1.5rem;
 
-    a {
+    a, div.wiewiorka {
         height: 60px;
         display: inline-block;
         transition: transform .4s;

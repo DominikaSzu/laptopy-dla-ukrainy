@@ -135,9 +135,9 @@ export const partners = {
             <a className={"otwartykrk"} target="_blank" href="https://otwarty.krakow.pl">
             <img alt={"Logo Koalicja Otwarty Kraków"} src={"../../kok.png"}/>
             </a>
-            <a className={"wiewiorka"} target="_blank" href="https://www.facebook.com/cswwiewiorka/">
+            <div className={"wiewiorka"}>
             <img alt={"Logo CSW Wiewiórka"} src={"../../csww.png"}/>
-            </a>
+            </div>
         </div>
     </div>
 }
