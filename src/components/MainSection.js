@@ -22,7 +22,10 @@ margin-top: 8rem;
 margin-bottom: 11rem;
 h1 {
     ${tw`text-4xl md:text-6xl`}
-    word-break: break-all;
+    
+    @media (max-width: 380px) {
+        word-break: break-all;
+    }
 }
 p {
 ${tw`text-xl md:text-2xl`}
