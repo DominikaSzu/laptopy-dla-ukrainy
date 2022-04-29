@@ -96,11 +96,28 @@ export const howToGetHelped = {
     title: "Мені потрібен ноутбук 💻",
     addUnderline: true,
     content: <div>
-        <p>Якщо ви є біженцем з України та перетнули український кордон після 24 лютого 2022 року , заповніть форму нижче. Заповнивши цю форму, ви потрапите в список очікування, щоб отримати ноутбук. Ми зв’яжемося з вами електронною поштою, як тільки у нас буде готовий ноутбук до відбору. Ноутбуки забираються в Кракові та повинні бути забрані особисто.</p>
-        <div style={{marginBottom: '2rem'}} className="form-button--wrapper">
-        <a className={ "form-button" } 
-        href={ 'https://docs.google.com/forms/d/e/1FAIpQLSdSdjcSCEJYDPFb6VMBGZHFrFGRpuR1ly3dCSkAnjT2FK-cVA/viewform' } 
-        target="_blank">Перейдіть до форми ></a>
+        <div>
+            <p>У зв’язку з дуже високим інтересом до кампанії #LaptopyDlaUkrainy, наразі ми призупиняємо можливість висилання заявок на отримання ноутбуків від нових осіб.
+            Кількість ноутбуків, які є в нашому розпорядженні, не в змозі покрити потреби, але ми постійно контактуємо з компаніями, які хочуть надати нам нове обладнання.</p>
+            
+            <p>Як тільки ситуація зміниться, ми відновимо реєстрацію.</p>
+
+            <div className="information__box">
+            <p><b>Увага</b>: люди, які вже заповнили форму заявки, наразі перебувають у списку очікування. Як тільки у нас з’являться ноутбуки, ми зв’яжемося з вами. Просимо цих людей не писати і не дзвонити нам – на жаль, це не прискорить процес отримання ноутбука, а лише сповільнить нас.</p>
+            <p>Запрошуємо стежити за нашою подією у FB, де ми будемо публікувати останні новини <a className="fb-group" target="_blank" href="https://fb.me/e/36HdSYCRC">https://fb.me/e/36HdSYCRC</a></p>
+            </div>
+        </div>
+
+        <div>
+            <p>Z uwagi na bardzo duże zainteresowanie akcją #LaptopyDlaUkrainy, na chwilę obecną zawieszamy możliwość zgłaszania się osób indywidualnych po odbiór laptopów.
+            Liczba laptopów, którymi dysponujemy, nie jest w stanie pokryć zapotrzebowania, jednak cały czas jesteśmy w kontakcie z firmami, które chcą przekazać nam kolejny sprzęt.</p>
+            
+            <p>Jak tylko sytuacja ulegnie zmianie, wznowimy możliwość rejestracji.</p>
+
+            <div className="information__box">
+            <p><b>Uwaga</b>: Osoby, które już wypełniły formularz zgłoszeniowy, są aktualnie na liście oczekujących. Jak tylko będziemy mieć dla nich dostępne laptopy, będziemy się kontaktować. Prosimy te osoby o nie zgłaszanie się ponownie i nie kontaktowanie się z nami - to niestety nie przyśpieszy otrzymania laptopa, a jedynie spowolni nasze działania.</p>
+            <p>Zachęcamy do śledzenia naszego wydarzenia na FB <a className="fb-group" target="_blank" href="https://fb.me/e/36HdSYCRC">https://fb.me/e/36HdSYCRC</a></p>
+            </div>
         </div>
 
         <p>Jeśli jesteś organizacją pozarządową, która pomaga uchodźczyniom i uchodźcom z terenu Ukrainy i chcesz wskazać osoby potrzebujące, wypełnij poniższy formularz:</p>
@@ -109,13 +126,13 @@ export const howToGetHelped = {
         href={ 'https://docs.google.com/forms/d/e/1FAIpQLSeTg069WphQgRFh8ztSshnlZrZ4vp0-d_hSmZ6f5AnwI871mQ/viewform' } 
         target="_blank">Przejdź do formularza ></a>
         </div>
+        
     </div>
 }
 
 export const partners = {
     title: 'Nasi partnerzy',
     content: <div>
-        <h4>Partnerzy wspierający:</h4>
         <div className={"logo-wrapper"}>
             <a className="interkuluralni" target="_blank" href="https://interkulturalni.pl/">
             <img alt={"Logo stowarzyszenia Interkulturalni PL"} src={"../../Interkulturalni.jpg"} />
