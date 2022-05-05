@@ -24,7 +24,10 @@ export const Menu = () => {
             <Link to={`/#${slugify(howToParticipate.title)}`}>chcę pomóc</Link>
           </StyledLink>
           <StyledLink>
-            <Link to={`/#${slugify(howToGetHelped.title)}`}>Мені потрібен ноутбук</Link>
+            <Link to={`/#${slugify('how-to-get-help')}`}>Мені потрібен ноутбук</Link>
+            </StyledLink>
+            <StyledLink>
+            <Link to={`/#${slugify('FAQ-zbiorka')}`}>Популярні запитання</Link>
             </StyledLink>
           <StyledLink>
             <Link to={`/#${slugify(actionExplained.title)}`}>o zbiórce</Link>
@@ -47,11 +50,15 @@ export const Menu = () => {
     </div>
   </StyledMenuWrapper>
 
-  <div className={`mobile-menu ${showMobileMenu ? 'hidden' : ''} md:hidden bg-white absolute w-full z-50`} style={{paddingBottom: "1rem"}}>
+  <div className={`mobile-menu ${showMobileMenu ? 'hidden' : ''} lg:hidden bg-white absolute w-full z-50`} style={{paddingBottom: "1rem"}}>
     <Link to={`/#${slugify(howToParticipate.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
     className="block py-2 px-4 text-sm hover:bg-gray-200">chcę pomóc</Link>
-    <Link to={`/#${slugify(howToGetHelped.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
+    <Link to={`/#${slugify('how-to-get-help')}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
     className="block py-2 px-4 text-sm hover:bg-gray-200">Мені потрібен ноутбук</Link>
+    
+    <Link to={`/#${slugify('FAQ-zbiorka')}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
+    className="block py-2 px-4 text-sm hover:bg-gray-200">Популярні запитання</Link>
+    
     <Link to={`/#${slugify(actionExplained.title)}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
     className="block py-2 px-4 text-sm hover:bg-gray-200">o zbiórce</Link>
     <Link to={`/#${slugify('FAQ')}`} onClick={() => setShowMobileMenu(!showMobileMenu)}
@@ -84,7 +91,7 @@ a {
 }`;
 
 const StyledLinkList = styled.div`
-${tw`hidden md:flex items-center`
+${tw`hidden lg:flex items-center`
 }`;
 
 const StyledLink = styled.div`
@@ -113,7 +120,7 @@ a{
 `;
 
 const StyledMobileButton = styled.div`
-${tw`md:hidden flex items-center`}
+${tw`lg:hidden flex items-center`}
 button svg {
   ${tw`w-6 h-6`}
 }

@@ -8,7 +8,10 @@ import {
   howToGetHelped,
   partners,
   partecipants,
-  contact } from "../common/data"; 
+  contact, 
+  FAQquestions, 
+  FAQquestionsGetHelp 
+} from "../common/data"; 
 
 const IndexPage = () => {
   return <Layout>
@@ -23,8 +26,14 @@ const IndexPage = () => {
   content={ howToParticipate.content }/>
   <TextComponent title={ howToGetHelped.title }
   addUnderline={ howToGetHelped.addUnderline } 
+  link={ 'how-to-get-help' }
   content={ howToGetHelped.content }/>
-  <FAQ/>
+  <FAQ title={ FAQquestionsGetHelp.title }
+  header={ 'Популярні запитання' }
+  questions={ FAQquestionsGetHelp.questions }/>
+  <FAQ title={ FAQquestions.title }
+  header={ 'FAQ' }
+  questions={ FAQquestions.questions }/>
   <TextComponent title={ partners.title } 
   content={ partners.content }/>
   <TextComponent title={ partecipants.title } 

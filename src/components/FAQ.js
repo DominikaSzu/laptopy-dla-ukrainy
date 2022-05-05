@@ -11,12 +11,12 @@ import {
 import styled from "@emotion/styled";
 import { slugify } from "../common/helpers";
 
-export const FAQ = () => {
-    return <WrappedComponent id={slugify('FAQ')}>
-        <h2>FAQ</h2>
+export const FAQ = ({ title, header, questions }) => {
+    return <WrappedComponent id={slugify(title)}>
+        <h2>{ header }</h2>
         <WrappedAccordeon>
     <Accordion allowToggle>
-        { FAQquestions.map((f, idx) => {
+        { questions.map((f, idx) => {
             return <WreppedAccordionItem key={idx}>
             <AccordionItem>
             <WrappedQuestion>

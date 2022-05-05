@@ -3,9 +3,9 @@ import {slugify, signPlaceholder} from "../common/helpers";
 import tw from "tailwind.macro";
 import styled from "@emotion/styled";
 
-export const TextComponent = ({title, content, addUnderline = false }) => {
+export const TextComponent = ({title, content, link, addUnderline = false }) => {
     return <WrappedTextComponent 
-    id={slugify(title)} 
+    id={slugify(link || title)} 
     underline={ addUnderline }>
         <h2 data-text={ signPlaceholder }>{title}</h2>
         <div>{content}</div>
