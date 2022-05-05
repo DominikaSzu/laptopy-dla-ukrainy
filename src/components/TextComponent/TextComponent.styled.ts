@@ -1,18 +1,11 @@
-import React from "react";
-import {slugify, signPlaceholder} from "../common/helpers";
 import tw from "tailwind.macro";
 import styled from "@emotion/styled";
 
-export const TextComponent = ({title, content, link, addUnderline = false }) => {
-    return <WrappedTextComponent 
-    id={slugify(link || title)} 
-    underline={ addUnderline }>
-        <h2 data-text={ signPlaceholder }>{title}</h2>
-        <div>{content}</div>
-    </WrappedTextComponent>
+interface ITextComponent {
+    underline: boolean;
 }
 
-const WrappedTextComponent = styled.div`
+export const WrappedTextComponent = styled.div`
 ${tw`max-w-6xl mx-auto px-4 my-14`}
 margin-bottom: 3rem;
 h2 {
@@ -21,9 +14,9 @@ h2 {
     &::before {
         position: absolute;
         top: .5rem;
-        content: ${ props => props.underline ? 'attr(data-text)' : 'none' };
+        content: ${ ({ underline }: ITextComponent) => underline ? 'attr(data-text)' : 'none' };
         color: transparent;
-        text-decoration: ${ props => props.underline ? 'underline wavy #005bbb' : 'none' }
+        text-decoration: ${ ({ underline }: ITextComponent) => underline ? 'underline wavy #005bbb' : 'none' }
     }
 
     @media (max-width: 450px) {
