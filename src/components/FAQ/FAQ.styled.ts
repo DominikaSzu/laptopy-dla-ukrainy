@@ -10,7 +10,7 @@ h2 {
 
 export const WrappedAccordeon = styled.div`
 padding: 12px;
-${tw`rounded-3xl border`}
+${tw`rounded-3xl`}
 `;
 
 export const WreppedAccordionItem = styled.div`

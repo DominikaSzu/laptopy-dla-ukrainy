@@ -9,9 +9,15 @@ import {
 import { slugify } from "../../common/helpers";
 import * as Styled from "./FAQ.styled";
 
-export const FAQ = ({ title, header, questions }) => {
+interface IFAQ {
+    title: string;
+    header?: string;
+    questions: any[];
+}
+
+export const FAQ = ({ title, header, questions }: IFAQ) => {
     return <Styled.WrappedComponent id={slugify(title)}>
-        <h2>{ header }</h2>
+        { header && <h2>{ header }</h2> }
         <Styled.WrappedAccordeon>
     <Accordion allowToggle>
         { questions.map((f, idx) => {

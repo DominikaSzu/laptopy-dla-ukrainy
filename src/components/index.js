@@ -5,3 +5,4 @@ export * from "./Menu/Menu";
 export * from "./TextComponent/TextComponent";
 export * from "./FAQ/FAQ";
 export * from "./Button/Button";
+export * from "./DoubleFAQ/DoubleFAQ";

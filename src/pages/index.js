@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Layout, TextComponent, MainSection, FAQ } from "../components";
+import { Layout, TextComponent, MainSection, FAQ, DoubleFAQ } from "../components";
 import { 
   aboutAction, 
   aboutUs, 
@@ -10,7 +10,8 @@ import {
   partecipants,
   contact, 
   FAQquestions, 
-  FAQquestionsGetHelp 
+  FAQGetHelpUA,
+  FAQGetHelpPL 
 } from "../common/data"; 
 
 const IndexPage = () => {
@@ -28,9 +29,8 @@ const IndexPage = () => {
   addUnderline={ howToGetHelped.addUnderline } 
   link={ 'how-to-get-help' }
   content={ howToGetHelped.content }/>
-  <FAQ title={ FAQquestionsGetHelp.title }
-  header={ 'Популярні запитання' }
-  questions={ FAQquestionsGetHelp.questions }/>
+  <DoubleFAQ FAQGetHelpUA={ FAQGetHelpUA } 
+  FAQGetHelpPL={ FAQGetHelpPL }/>
   <FAQ title={ FAQquestions.title }
   header={ 'FAQ' }
   questions={ FAQquestions.questions }/>

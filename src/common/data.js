@@ -47,7 +47,7 @@ export const FAQquestions = {
     </p> },
 ]}
 
-export const FAQquestionsGetHelp = {
+export const FAQGetHelpUA = {
     title: 'faq-zbiorka',
     questions: [
     { question: 'Хто є організаторами акції #LaptopyFlaUkrainy?', 
@@ -126,6 +126,7 @@ export const FAQquestionsGetHelp = {
         <p>Pesel і номер паспорта необхідні, тому що при отриманні ноутбука ви підписуєте договір дарування, який є документом, що підтверджує, що ви отримали право власності на ноутбук. Ці дані також підтверджують вашу особу, тим більше, що ваша адреса проживання в Польщі може змінитися.</p>
         <p>Таким чином ми також підтверджуємо ваш статус біженця війни.</p>
         <p>Більше того, може статися, що знайдуться люди з однаковими іменами та прізвищами. Тільки номер PESEL, номер паспорта може підтвердити вашу особу.</p>
+        <p>Link:  <a className="fb-group" href="https://docs.google.com/document/d/1_aAn1IA1Ti2ZkYb9eu4yVX92c5xXDJkPAtMMNzRotHw/edit?usp=sharing" target="_blank">Інформація про зберігання персональних даних</a></p>
     </div> },
     { question: 'Мій ноутбук не працює. Що робити?', 
     answer: <div>
@@ -137,6 +138,109 @@ export const FAQquestionsGetHelp = {
         <p>Якщо ви не знайшли потрібну інформацію в секції поширених запитань, напишіть нам на адресу: <a href="mailto:laptopydlaukrainy@gmail.com" target="_blank">laptopydlaukrainy@gmail.com</a>.</p>
         <p><b>ПРИМІТКА</b> Ми не відповідатимемо на запитання, відповіді на які ви знайдете в розділі поширених запитань. Але цей час ми присвятимо контактам з компаніями, щоб заохотити їх пожертвувати ноутбуки для нашої акції.</p>
         <p>Будь ласка, не пишіть листи нашим партнерам - вони не дадуть відповіді на ваші запитання.</p>
+    </div> },
+    { question: 'Інформація про зберігання персональних даних:', 
+    answer: <div>
+        Link:  <a className="fb-group" href="https://docs.google.com/document/d/1_aAn1IA1Ti2ZkYb9eu4yVX92c5xXDJkPAtMMNzRotHw/edit?usp=sharing" target="_blank">Інформація про зберігання персональних даних</a>
+    </div> },
+    ]
+}
+
+export const FAQGetHelpPL = {
+    title: 'faq-zbiorka',
+    questions: [
+    { question: 'Kim są organizatorzy zbiórki #LaptopyDlaUkrainy?', 
+    answer: <div>
+        <p>Jesteśmy wolontariuszami, zajmujemy się zbiórką w naszym wolnym czasie po pracy. Wszyscy pracujemy na etacie, także prosimy o uszanowanie naszego czasu i nie wysyłanie do nas wiadomości z pytaniami, na które odpowiedzi możecie znaleźć w tym FAQ.</p>
+        <p>Zanim zadasz nam pytanie, upewnij się, że nie znajdziesz odpowiedzi na naszej stronie.</p>
+        <p>Nie będziemy odpowiadać na takie pytania. Ale za to ten czas poświęcimy na kontakty z firmami, aby zdobyć jak najwięcej laptopów dla Was.</p>
+    </div> },
+    { question: 'Skąd mamy laptopy?', 
+    answer: <div>
+        <p>Laptopy otrzymujemy od firm. Są to komputery używane, kilkuletnie. </p>
+        <p>Firmy deklarują, że są sprawne i sprawdzone. Każdy komputer został przez nich sformatowany i ma wgrany system operacyjny. Bateria może być rozładowana, dlatego przed pierwszym uruchomieniem komputera, należy go podłączyć do prądu i podładować. Informujemy, że nie odpowiadamy za zgłaszane reklamacje.</p>
+    </div> },
+    { question: 'Kto może dostać laptopa?', 
+    answer: <div>
+        <p>Musisz spełnić kilka warunków:</p>
+        <ul>
+            <li>jesteś uchodźcą wojennym i możesz to udokumentować</li>
+            <li>przekroczyłeś granicę ukraińską po 24 lutego</li>
+            <li>możesz odebrać osobiście komputer</li>
+            <li>jesteś osobą pełnoletnią (masz ukończone 18 lat). (Jeśli nie masz 18 lat przeczytaj odpowiedź na pytanie “Czy osoba niepełnoletnia może odebrać laptopa?”)</li>
+        </ul>
+        <p>Podczas podpisywania umowy zweryfikujemy Twój status uchodźcy wojennego oraz Twoją tożsamość. Koniecznie musisz wziąć dokumenty ze sobą.</p>
+        <p>Odbiór sprzętu i podpisanie umowy darowizny odbywa się w Krakowie - NIE WYSYŁAMY SPRZĘTU, NIE PRZEKAZUJEMY SPRZĘTU PRZEZ POŚREDNIKÓW.</p>
+    </div> },
+    { question: 'Jak otrzymać laptopa?', 
+    answer: <div>
+        <p>Należy wypełnić formularz zgłoszeniowy na stronie laptopydlaukrainy.pl. Laptopy są przekazywane według  kolejności chronologicznej zgłoszeń. Dodatkowy kontakt telefoniczny, mailowy nie przyśpieszy kolejki.</p>
+        <p>Jeśli przyjdzie Twoja kolej, wtedy się z Tobą skontaktujemy drogą mailową i poinformujemy kiedy i gdzie odebrać sprzęt. Prosimy o cierpliwość i wyrozumiałość, ponieważ potrzeby są ogromne.</p>
+        <p>Obecnie formularz jest wyłączony, ponieważ zebraliśmy już 40 tysięcy wniosków. Uruchomimy go ponownie, jak tylko będziemy dysponować odpowiednią liczbą laptopów.</p> 
+        <p>Informacja o tym pojawi się na wydarzeniu na FB: https://fb.me/e/36HdSYCRC</p>
+        <p>Prosimy nie pisać do nas w tej sprawie - jak tylko sytuacja się zmieni, to poinformujemy o tym na wydarzeniu.</p>
+    </div> },
+    { question: 'Jakie dokumenty muszę wziąć ze sobą, aby odebrać laptopa?', 
+    answer: <div>
+        <ul>
+            <li>paszport</li>
+            <li>numer PESEL (jeśli posiadasz)</li>
+            <li>adres email, który podałeś w formularzu zgłoszeniowym</li>
+        </ul>
+    </div> },
+    { question: 'Gdzie jest miejsce odbioru laptopa?', 
+    answer: <div>
+        <p>Miejsce odbioru laptopa oraz godzina będzie wskazana w mailu, który otrzymasz od nas, jak będziemy mieli laptopa, aby Ci go przekazać.</p>
+    </div> },
+    { question: 'Jak się dowiem, że mogę odebrać laptopa?', 
+    answer: <div>
+        <p>Wyślemy Ci informację drogą mailową, gdzie wskażemy miejsce oraz godzinę odbioru. Prosimy sprawdzaj swoją pocztę regularnie, a także folder SPAM. </p>
+        <p>Wiadomość zostanie wysłana z adresy <a href="mailto:laptopydlaukrainy@gmail.com" target="_blank">laptopydlaukrainy@gmail.com</a>. Tylko wiadomość wysłana z tego adresu będzie wiarygodna. Nie kontaktujemy się drogą telefoniczną ani poprzez komunikatory.</p>
+        <p>Jeśli dostałeś wiadomość o odbiorze laptopa z innego źródła, proszę nie ufaj jej i temu nadawcy.</p>
+    </div> },
+    { question: 'Czy ktoś może za mnie odebrać laptopa?', 
+    answer: <div>
+        <p>Nie, musisz odebrać laptopa osobiście. </p>
+    </div> },
+    { question: 'Czy osoba niepełnoletnia może odebrać laptopa?', 
+    answer: <div>
+        <p>Jeśli jesteś osobą niepełnoletnią, umowa zostanie sporządzona na Twojego rodzica lub opiekuna prawnego. Koniecznie musisz z nim przyjść.</p>
+    </div> },
+    { question: 'Czy wysyłacie laptopa?', 
+    answer: <div>
+        <p>Nie, nie ma takiej możliwości. Miejscem odbioru laptopa jest Kraków.</p>
+    </div> },
+    { question: 'Nie mogłem przyjść w wyznaczonym czasie, czy dostanę laptopa w innym terminie?', 
+    answer: <div>
+        <p>Przykro nam, ale tylko w dniu wskazanym w mailu informującym o miejscu i godzinie odbioru gwarantujemy, że na 100% otrzymasz laptopa. Jeśli nie mogłeś przyjść w terminie lub nie odczytałeś na czas naszej wiadomości, jest nam bardzo przykro, ale będziesz mógł otrzymać laptopa tylko wtedy, gdy jakaś inna osoba nie odbierze w terminie komputera.</p>
+        <p>Ale nie gwarantujemy, że będziemy mogli Ci pomóc. W pierwszej kolejności będziemy przekazywać sprzęt nowym osobom, a jeśli któraś z nich nie przyjdzie w wyznaczonym terminie, wtedy możemy wydać laptopa Tobie. </p>
+        <p>Napisz do nas, wtedy powiemy Ci, kiedy ewentualnie możesz przyjść i być może będziesz mógł otrzymać sprzęt.</p>
+    </div> },
+    { question: 'Czy kilka osób z rodziny może otrzymać laptopa?', 
+    answer: <div>
+        <p>Nie, jedna rodzina może otrzymać jednego laptopa. W ten sposób pomagamy większej liczbie rodzin. Potrzeby są ogromne, także wystarczy, jak się zgłosi tylko jeden członek rodziny.</p>
+    </div> },
+    { question: 'Po co nam pesel i dane do paszportu', 
+    answer: <div>
+        <p>Pesel oraz numer paszportu są potrzebne ponieważ wraz z odbiorem laptopa podpisujecie umowę darowizny, która jest dokumentem potwierdzającym, że otrzymaliście na własność laptopa. Te dane potwierdzają także Waszą tożsamość, zwłaszcza, że Wasz adres zamieszkania w Polsce może się zmienić.</p>
+        <p>W ten sposób weryfikujemy także Wasz status uchodźcy wojennego.</p>
+        <p>Ponadto, może zdarzyć się tak, że będą osoby o tym samym imieniu i nazwisku. Tylko PESEL, numer paszportu może potwierdzić Waszą tożsamość.</p>
+        <p>Link:  <a className="fb-group" href="https://docs.google.com/document/d/1_aAn1IA1Ti2ZkYb9eu4yVX92c5xXDJkPAtMMNzRotHw/edit?usp=sharing" target="_blank">Informacja o przechowywaniu danych osobowych</a></p>
+    </div> },
+    { question: 'Mój laptop nie działa. Co robić?', 
+    answer: <div>
+        <p>Może się zdarzyć, że dany laptop może mieć jakieś problemy techniczne lub ładowarka może nie działać. Jeśli zgłosisz nam usterkę w ciągu 48 godzin od przekazania sprzętu, to jeśli dysponujemy wolnym laptopem lub ładowarką, możemy je wymienić, jeśli tak nie jest, niestety nie możemy pomóc.</p>
+        <p>Wszelkie naprawy będziesz musiał zrobić na własną rękę.</p>
+    </div> },
+    { question: 'Jak się skontaktować z organizatorami zbiórki', 
+    answer: <div>
+        <p>Jeśli nie znalazłeś informacji w naszym FAQ, napisz do nas na adres: <a href="mailto:laptopydlaukrainy@gmail.com" target="_blank">laptopydlaukrainy@gmail.com</a>.</p>
+        <p>UWAGA: Nie będziemy odpowiadać na pytania, na które odpowiedzi znajdziecie w tym FAQ. Ale za to, ten czas poświęcimy na kontakty z firmami, aby zachęcić je do przekazania laptopów na naszą zbiórkę.</p>
+        <p>Prosimy nie pisać maili do naszych partnerów - oni nie będą odpowiadać na Wasze pytania.</p>
+    </div> },
+    { question: 'Informacja o przechowywaniu danych osobowych', 
+    answer: <div>
+        Link:  <a className="fb-group" href="https://docs.google.com/document/d/1_aAn1IA1Ti2ZkYb9eu4yVX92c5xXDJkPAtMMNzRotHw/edit?usp=sharing" target="_blank">Informacja o przechowywaniu danych osobowych</a>
     </div> },
     ]
 }
