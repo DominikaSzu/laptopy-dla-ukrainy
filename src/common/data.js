@@ -34,7 +34,7 @@ export const FAQquestions = {
     </ol>
     </div> },
     { question: 'Jak długo trwa zbiórka?', answer: 
-<p>Zbiórka „Laptopy dla Ukrainy” trwać będzie od 10 marca do 31 maja 2022 r.</p> },
+<p>Zbiórka „Laptopy dla Ukrainy” trwać będzie od 10 marca do 30 czerwca 2022 r.</p> },
     { question: 'Do kogo trafią laptopy?', answer: 
     <p>Zgromadzony sprzęt komputerowy zostanie przekazany uchodźczyniom i uchodźcom z terenu Ukrainy za pośrednictwem organizacji pozarządowych.</p> },
     { question: `Czy sprzęt mogę wysłać pocztą/kurierem?`, answer: 
@@ -383,6 +383,13 @@ export const partecipants = {
             </a>
             <a className={"shell"} target="_blank" href="https://www.shell.pl/">
             <img alt={"Logo Shell"} src={"../../shell.png"}/>
+            </a>
+
+            <a className={"hitachi-vantara"} target="_blank" href="https://www.hitachivantara.com/en-us/home.html">
+            <img alt={"Logo Hitachi Vantara"} src={"../../hitachi_vantara.png"}/>
+            </a>
+            <a className={"nokia"} target="_blank" href="https://nokiakrakow.pl">
+            <img alt={"Logo Nokia Kraków"} src={"../../nokia.png"}/>
             </a>
         </div>
     </div>

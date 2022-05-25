@@ -119,6 +119,10 @@ ol li {
             height: 80px;
         }
 
+        &.hitachi-vantara {
+            margin-left: 10px;
+        }
+
         &:hover {
             transform: scale(1.1);
         }
