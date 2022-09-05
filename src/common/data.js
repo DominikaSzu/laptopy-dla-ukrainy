@@ -384,12 +384,14 @@ export const partecipants = {
             <a className={"shell"} target="_blank" href="https://www.shell.pl/">
             <img alt={"Logo Shell"} src={"../../shell.png"}/>
             </a>
-
             <a className={"hitachi-vantara"} target="_blank" href="https://www.hitachivantara.com/en-us/home.html">
             <img alt={"Logo Hitachi Vantara"} src={"../../hitachi_vantara.png"}/>
             </a>
             <a className={"nokia"} target="_blank" href="https://nokiakrakow.pl">
             <img alt={"Logo Nokia Kraków"} src={"../../nokia.png"}/>
+            </a>
+            <a className={"dfin"} target="_blank" href="https://www.dfinsolutions.com/">
+            <img alt={"Logo DFIN"} src={"../../dfin-logo.png"}/>
             </a>
         </div>
     </div>

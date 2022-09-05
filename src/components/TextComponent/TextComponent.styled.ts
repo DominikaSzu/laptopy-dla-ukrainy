@@ -123,6 +123,11 @@ ol li {
             margin-left: 10px;
         }
 
+        &.dfin {
+            height: 35px;
+            margin-left: 10px;
+        }
+
         &:hover {
             transform: scale(1.1);
         }
